@@ -18,7 +18,7 @@ export class Api extends BaseProvider.Api {
     if (!data.tickers) {
       throw new Error('no tickers');
     }
-    const result = data.tickers.find(({ pair }) => pair === (base.toUpperCase+ quote.toUpperCase()));
+    const result = data.tickers.find(({ pair }) => pair === (base.toUpperCase() + quote.toUpperCase()));
     if (!result) {
       throw new Error(`no quote currency ${quote.toUpperCase()}`);
     }
