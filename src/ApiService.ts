@@ -26,6 +26,7 @@ import * as ProviderPaymium from './providers/ProviderPaymium';
 import * as ProviderPoloniex from './providers/ProviderBitPay';
 import * as ProviderSatangPro from './providers/ProviderSatangPro';
 import * as ProviderVccExchange from './providers/ProviderVccExchange';
+import * as ProviderLuno from './providers/ProviderLuno';
 
 export const Providers: Record<string, BaseProvider.Api> = {
   binance: new ProviderBinance.Api(),
@@ -52,6 +53,7 @@ export const Providers: Record<string, BaseProvider.Api> = {
   poloniex: new ProviderPoloniex.Api(),
   satangpro: new ProviderSatangPro.Api(),
   vccexchange: new ProviderVccExchange.Api(),
+  luno: new ProviderLuno.Api()
 };
 
 type Ticker = unknown;
